@@ -6,13 +6,7 @@ pipeline {
         IMAGE_NAME = "omarm710/flask-app"
     }
 
-    stages {
-
-        stage('Clone') {
-            steps {
-                git 'https://github.com/OmarM710/flask-docker-demo.git'
-            }
-        }
+    
 
         stage('Build Image') {
             steps {
